@@ -1,6 +1,13 @@
 
 import './App.css';
 import IMG_TEST from'./images/image1.jpeg';
+// import Header from "./Components/Header.jsx"
+// import MyFooter from "./Components/Footer.jsx"
+
+import{Header,Footer} from "./Components"
+import Button from 'react-bootstrap/Button';
+
+
 
 
 // const name="ayesha"
@@ -59,23 +66,27 @@ import IMG_TEST from'./images/image1.jpeg';
 
 // export default App;
 
-function Header(){
-  return(
-    <h1>header</h1>
-  )
-}
-function Footer(){
-  return(
-    <h1>footer</h1>
-  )
-}
+// function Header(){
+//   return(
+//     <h1>header</h1>
+//   )
+// }
+// function Footer(){
+//   return(
+//     <h1>footer</h1>
+//   )
+// }
 function App() {
 return(
   <div>
     <Header></Header>
     <p>data</p>
-    <Footer/>
+    <Footer/><br/>
+    <Button variant="primary">Primary</Button>
+    <button type="button" className="btn btn-danger">Danger</button>
   </div>
+   
+  
 )
 }
 
