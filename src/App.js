@@ -1,11 +1,14 @@
 
 import './App.css';
-import IMG_TEST from'./images/image1.jpeg';
+// import IMG_TEST from './images/image1.jpeg';
 // import Header from "./Components/Header.jsx"
 // import MyFooter from "./Components/Footer.jsx"
 
-import{Header,Footer} from "./Components"
-import Button from 'react-bootstrap/Button';
+// import{Header,Footer} from "./Components"
+// import Button from 'react-bootstrap/Button';
+// import Button from '@mui/material/Button';
+import Card from './Components/Card.jsx'
+import Input  from './Components/Input.jsx';
 
 
 
@@ -21,7 +24,7 @@ import Button from 'react-bootstrap/Button';
 //     console.log("my name is ayesha")
 //   }
 
- 
+
 //   const student={
 //     stname:"ahmad",
 //     age:"20"
@@ -36,7 +39,7 @@ import Button from 'react-bootstrap/Button';
 //       stname:"ahmad shah",
 //       age:"22"
 //     }
-  
+
 //   ]
 
 //   const arr=["a","b","c"]
@@ -58,8 +61,8 @@ import Button from 'react-bootstrap/Button';
 //       </ul>
 //     <p>{arr}</p>
 
-   
- 
+
+
 //     </div>
 //   );
 // }
@@ -77,17 +80,31 @@ import Button from 'react-bootstrap/Button';
 //   )
 // }
 function App() {
-return(
-  <div>
-    <Header></Header>
+  const arr = ["one", "two", "three"];
+  const getData=(a) => {
+    console.log("parent",a);
+  };
+  return (
+    <div>
+      <div className='App'>
+      <Input onChange={(e)=>console.log(e.target.value)}/>
+      {arr.map((v,i)=> (
+      <Card val={v} key={i} index={i} getData={getData}/>
+      ))}
+      </div>
+    
+
+      {/* <Button variant="text">Text</Button> 
+<Button variant="contained" color="success">Contained</Button>
+<Button variant="outlined">Outlined</Button> */}
+      {/* <Header></Header>
     <p>data</p>
     <Footer/><br/>
     <Button variant="primary">Primary</Button>
-    <button type="button" className="btn btn-danger">Danger</button>
-  </div>
-   
-  
-)
+    <button type="button" className="btn btn-danger">Danger</button> */}
+
+    </div>
+  )
 }
 
 
