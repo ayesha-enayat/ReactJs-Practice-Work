@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 
 
 // const Card = (props) => {
@@ -10,18 +10,23 @@ import React from 'react'
 //     </div>
 //   )
 // }
-const Card = ({val , getData}) => {
-    console.log(val);
+// const Card = ({val , getData}) => {
+//     console.log(val);
     
-  return (
-    <div>
-      <h1>{val}</h1>
-      <button onClick={()=>getData("Ayesha Enayat")} className='primary'>clickme</button>
-    </div>
-  )
-}
+//   return (
+//     <div>
+     
+//       {/* <h1>{val}</h1>
+//       <button onClick={()=>getData("Ayesha Enayat")} className='primary'>clickme</button> */}
+//     </div>
+//   )
+// }
 
-export default Card
+
+
+
+
+
 
 
 

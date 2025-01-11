@@ -8,8 +8,11 @@ import './App.css';
 // import Button from 'react-bootstrap/Button';
 // import Button from '@mui/material/Button';
 import Card from './Components/Card.jsx'
-import Input  from './Components/Input.jsx';
-
+import Input from './Components/Input.jsx';
+import BasicCard from './Components/MUICard.jsx';
+//Import Layout.jsx
+import Layout from './Components/Layout.jsx';
+import Dashboard from './pages/Dashboard.jsx';
 
 
 
@@ -80,23 +83,29 @@ import Input  from './Components/Input.jsx';
 //   )
 // }
 function App() {
-  const arr = ["one", "two", "three"];
-  const getData=(a) => {
-    console.log("parent",a);
-  };
+  // const arr = ["one", "two", "three"];
+  // const getData=(a) => {
+  //   console.log("parent",a);
+  // };
   return (
     <div>
-      <div className='App'>
+
+    {/* <Layout/> */}
+    <Dashboard/>
+  
+      {/* <div className='App'>
       <Input onChange={(e)=>console.log(e.target.value)}/>
-      {arr.map((v,i)=> (
-      <Card val={v} key={i} index={i} getData={getData}/>
+      {arr.map((v,i)=> ( */}
+      {/* // <Card val={v} key={i} index={i} getData={getData}/>
+      <BasicCard val={v} key={i} index={i} getData={getData}/>
+      
       ))}
-      </div>
-    
+      </div> */}
+
 
       {/* <Button variant="text">Text</Button> 
-<Button variant="contained" color="success">Contained</Button>
-<Button variant="outlined">Outlined</Button> */}
+       <Button variant="contained" color="success">Contained</Button>
+       <Button variant="outlined">Outlined</Button> */}
       {/* <Header></Header>
     <p>data</p>
     <Footer/><br/>
